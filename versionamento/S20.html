@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="conteudo-artigo">
+          <h1></h1>
+          <p></p>
+
+         <h2>1.Pipelines</h2>
+         <p>Pipelines em versionamento são processos automatizados que facilitam o desenvolvimento, teste, integração e implantação de software de forma contínua e eficiente. Esses pipelines geralmente são parte de sistemas de Integração Contínua (CI) e Entrega Contínua (CD), permitindo que o código seja versionado, testado e liberado com segurança em várias etapas.
+
+            Principais Etapas de um Pipeline de Versionamento:
+            Controle de Versionamento:
+            
+            O pipeline começa com um sistema de controle de versão (como Git), onde o código é armazenado e versionado. Mudanças no código, como novos commits ou pull requests, disparam a execução automática do pipeline.
+            Os repositórios de código são fundamentais para manter o histórico de alterações, colaboração entre equipes, e possibilitar o rollback em caso de erros.
+            Integração Contínua (CI):
+            
+            Após cada commit, o pipeline executa testes automáticos e outras verificações para garantir que as novas alterações no código não quebrem o sistema.
+            Ferramentas de CI, como Jenkins, Travis CI ou GitLab CI, são usadas para automatizar a execução de testes unitários, testes de integração e análise estática do código.
+            Construção e Testes:
+            
+            O pipeline inclui a etapa de compilação ou build, onde o código-fonte é transformado em um artefato executável.
+            Após a build, são realizados testes automatizados para validar a funcionalidade do software. Isso pode incluir testes de unidade, integração, performance, e segurança.
+            Entrega Contínua (CD):
+            
+            Na etapa de Entrega Contínua, o pipeline gerencia a implantação automática do código em um ambiente de staging ou produção, após passar por todas as verificações. A automação da entrega torna mais rápido e seguro o processo de colocar novas funcionalidades em produção.
+            Ferramentas como Docker e Kubernetes podem ser usadas para gerenciar a infraestrutura e automação de deployment.
+            Monitoramento e Feedback:
+            
+            O pipeline também pode incluir sistemas de monitoramento para acompanhar o desempenho da aplicação em produção, coletando dados e gerando feedback para a equipe de desenvolvimento.
+            Isso garante que, caso algo não funcione conforme o esperado, o código pode ser corrigido rapidamente, e o ciclo de versionamento recomeça.
+            Benefícios dos Pipelines de Versionamento:
+            Automação: Reduz a necessidade de tarefas manuais, permitindo que os desenvolvedores se concentrem no código.
+            Qualidade: Os pipelines garantem que o código seja testado e validado a cada mudança, melhorando a qualidade e estabilidade do software.
+            Integração Rápida: Facilita a colaboração entre equipes e a integração de diferentes partes do código em um único repositório.
+            Entrega Ágil: Aumenta a agilidade no ciclo de vida do desenvolvimento de software, permitindo lançamentos frequentes e confiáveis.
+            Em resumo, os pipelines de versionamento são fluxos automatizados que integram controle de versão, testes e deploy, garantindo eficiência, qualidade e agilidade no desenvolvimento de software.</p>
+        
+         <h2>2.Funcionamento de pipelines na integração contínua</h2>
+         <p>Os pipelines na integração contínua (CI) são processos automatizados que permitem que as mudanças no código sejam integradas e validadas continuamente, garantindo que o software esteja sempre em um estado funcional. Eles atuam como uma linha de montagem, onde cada etapa automatizada testa e valida o código, proporcionando uma forma ágil e eficiente de desenvolver software.
+
+            Funcionamento dos Pipelines na Integração Contínua:
+            Detecção de Alterações no Código:
+            
+            O processo de integração contínua é disparado assim que uma nova alteração no código é enviada (commit) ao repositório de controle de versão (ex.: Git). A partir daí, o pipeline é executado automaticamente para verificar se essa mudança não quebra o sistema.
+            Build ou Compilação:
+            
+            A primeira etapa do pipeline é a construção (build) do código. O código é compilado e transformado em um artefato executável ou pacote, dependendo da linguagem de programação.
+            Se o build falhar, a pipeline é interrompida, e os desenvolvedores são notificados para corrigir o erro.
+            Execução de Testes Automatizados:
+            
+            O pipeline executa uma série de testes automatizados, como testes unitários, de integração e de funcionalidade. Isso garante que as novas alterações não quebrem funcionalidades existentes.
+            Se algum teste falhar, o pipeline é interrompido e o desenvolvedor é informado para corrigir os problemas.
+            Análise de Qualidade do Código:
+            
+            Ferramentas de análise estática podem ser usadas para verificar a qualidade do código, padrões de codificação, complexidade e possíveis vulnerabilidades de segurança.
+            Caso existam problemas de qualidade, como violações de regras ou código inseguro, o pipeline pode falhar, sinalizando a necessidade de ajustes.
+            Entrega de Artefatos:
+            
+            Se todos os testes e validações forem bem-sucedidos, o pipeline gera e armazena um artefato de software (um pacote, um executável ou uma imagem de contêiner) pronto para ser implantado.
+            Esse artefato pode ser armazenado em um repositório ou liberado diretamente para um ambiente de staging ou produção, caso o processo inclua Entrega Contínua (CD).
+            Feedback Automático:
+            
+            Os desenvolvedores recebem feedback imediato após cada pipeline, permitindo que corrijam rapidamente erros ou problemas de integração. Isso ajuda a reduzir o tempo de correção de bugs e a manter o código sempre pronto para ser lançado.
+            Ferramentas Usadas:
+            Jenkins, GitLab CI, CircleCI, e Travis CI são ferramentas populares de CI que automatizam e gerenciam pipelines.
+            Elas integram-se com repositórios de código como GitHub ou Bitbucket, facilitando a automação completa do ciclo de integração.
+            Benefícios dos Pipelines na Integração Contínua:
+            Detecção precoce de erros: Como as alterações são testadas imediatamente após cada commit, os erros são identificados rapidamente.
+            Automação e Eficiência: Automatizar o build, os testes e as validações acelera o ciclo de desenvolvimento, permitindo que os desenvolvedores se concentrem no código.
+            Qualidade e Confiabilidade: A execução contínua de testes garante que o software seja confiável e de alta qualidade.
+            Feedback Rápido: Os desenvolvedores são notificados imediatamente sobre problemas, permitindo correções rápidas.
+            Em resumo, os pipelines na integração contínua são fluxos automatizados que integram, testam e validam continuamente o código, garantindo que o software esteja sempre funcional, de qualidade e pronto para ser implantado.</p>
+
+         <h2>3.Funções principais de um pipeline</h2>
+         <p>As principais funções de um pipeline de integração contínua (CI) são:
+
+            Build (Compilação):
+            
+            Função: Transformar o código-fonte em um artefato executável ou pacote.
+            Objetivo: Verificar se o código pode ser compilado corretamente e gerar um artefato pronto para testes ou produção.
+            Testes Automatizados:
+            
+            Função: Executar testes unitários, de integração e outros testes automatizados.
+            Objetivo: Validar se o código funciona conforme esperado e não quebra funcionalidades existentes.
+            Análise de Qualidade do Código:
+            
+            Função: Realizar análises estáticas e dinâmicas do código.
+            Objetivo: Garantir que o código siga padrões de codificação e esteja livre de vulnerabilidades ou problemas de qualidade.
+            Deploy (Implantação):
+            
+            Função: Implantar o código em ambientes de staging ou produção.
+            Objetivo: Disponibilizar o software para testes adicionais ou para os usuários finais, dependendo do estágio do pipeline.
+            Notificações e Feedback:
+            
+            Função: Enviar feedback e notificações sobre o status do pipeline para os desenvolvedores.
+            Objetivo: Informar sobre sucesso ou falhas nas etapas do pipeline, permitindo correções rápidas.</p>
+
+         <h2>4.Aplicações práticas de pipelines.</h2>
+         <p>As aplicações práticas de pipelines em desenvolvimento de software incluem:
+
+            Integração Contínua (CI):
+            
+            Descrição: Automatiza o build e os testes do código sempre que novas alterações são enviadas ao repositório.
+            Benefícios: Detecta rapidamente erros e problemas de integração, garantindo que o código esteja sempre em um estado funcional.
+            Entrega Contínua (CD):
+            
+            Descrição: Automatiza a implantação do código em ambientes de staging ou produção após passar pelos testes.
+            Benefícios: Permite lançamentos frequentes e confiáveis de novas funcionalidades e correções.
+            Deploy Contínuo:
+            
+            Descrição: Extensão da entrega contínua que automatiza a implantação diretamente para a produção.
+            Benefícios: Reduz o tempo de colocação de novas versões em produção e melhora a eficiência do lançamento.
+            Automação de Testes:
+            
+            Descrição: Executa uma bateria de testes automatizados como parte do pipeline.
+            Benefícios: Garante que novas alterações não introduzam regressões e valida a integridade do software.
+            Monitoramento e Feedback:
+            
+            Descrição: Coleta dados de desempenho e gera feedback sobre o pipeline e o ambiente de produção.
+            Benefícios: Ajuda a identificar problemas operacionais e melhorar a qualidade contínua do software.
+            Essas aplicações práticas melhoram a eficiência, qualidade e agilidade no desenvolvimento e entrega de software.</p>
+
+        <h2>5.Etapas da construção de pipeline de CI/CD</h2>
+        <p>A construção de um pipeline de CI/CD (Integração Contínua/Entrega Contínua) geralmente envolve as seguintes etapas:
+
+            Planejamento: Definir as necessidades do projeto, requisitos de integração e entrega, e as ferramentas a serem utilizadas.
+            
+            Configuração do Repositório: Preparar o repositório de código-fonte, muitas vezes usando um sistema de controle de versão como Git.
+            
+            Integração Contínua (CI):
+            
+            Construção: Automatizar a compilação do código, executando tarefas como compilar o código-fonte e gerar artefatos.
+            Testes: Executar testes automatizados (unitários, integração, etc.) para garantir que o código funcione como esperado.
+            Análise: Realizar análises estáticas e dinâmicas de código para identificar problemas de qualidade e segurança.
+            Entrega Contínua (CD):
+            
+            Empacotamento: Preparar o software para implantação, criando pacotes ou contêineres.
+            Implantação: Automatizar a implantação em ambientes de staging ou produção, muitas vezes usando ferramentas de orquestração e gerenciamento de configurações.
+            Monitoramento: Monitorar o desempenho do software em produção, coletando feedback e métricas para garantir a saúde e a performance do sistema.
+            
+            Feedback e Iteração: Revisar e ajustar o pipeline com base no feedback e nas métricas para melhorar continuamente o processo.
+            
+            Essas etapas ajudam a garantir uma entrega de software mais rápida, confiável e eficiente.</p>
+    </div>
+    <a href="../index.html">voltar página inicial</a>
+</body>
+</html>

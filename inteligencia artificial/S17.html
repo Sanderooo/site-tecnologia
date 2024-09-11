@@ -1,0 +1,70 @@
+!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="conteudo-artigo">
+          <h1></h1>
+          <p></p>
+
+         <h2>1.Binary Cross-Entropy Loss:  </h2>
+         <p>Binary Cross-Entropy Loss (ou Entropia Cruzada Binária) é uma função de perda comumente usada em problemas de classificação binária. Ela mede a discrepância entre as previsões do modelo e os valores verdadeiros.</p>
+        
+         <h2>2.Parâmetros e hiperparâmetros </h2>
+         <p>Parâmetros:
+            Estes são os componentes internos
+            do modelo, que são ajustados
+            automaticamente durante o
+            treinamento buscando minimizar a
+            função de perda e melhorar o
+            desempenho do modelo. Em outras
+            palavras, os parâmetros são as
+            variáveis internas que o modelo
+            aprende a partir dos dados.
+            Um exemplo clássico é o modelo de
+            regressão linear, em que os
+            parâmetros se referem aos
+            coeficientes que definem a relação
+            entre as variáveis de entrada e saída.
+            Hiperparâmetros:
+           Eles são as configurações externas ao
+           modelo, que são definidas antes do
+           início do treinamento e influenciam o
+           comportamento e o desempenho do
+           modelo durante o treinamento.
+           Um exemplo prático é o uso do
+           GridSearchCV da biblioteca scikit-learn,
+           que utiliza validação cruzada para
+           explorar diversas combinações de
+           hiperparâmetros para encontrar a
+           configuração mais adequada para o
+           modelo</p>
+
+         <h2>3. Busca em Grade (Grid Search) </h2>
+         <p>A Busca em Grade (Grid Search) é um método de otimização utilizado em aprendizado de máquina e inteligência artificial para encontrar a combinação ideal de hiperparâmetros de um modelo. Aqui está um resumo sobre como ela funciona:
+          1- Definição de Parâmetros: Primeiro, define-se um conjunto de valores possíveis para cada hiperparâmetro que se deseja otimizar.
+          2- Criação Da Grade: Esses valores formam uma "grade" de combinações possíveis. Por exemplo, se há dois hiperparâmetros e cada um pode assumir três valores diferentes, a grade será uma matriz de 3x3.
+          3- Avaliação: O modelo é treinado e avaliado para cada combinação de hiperparâmetros na grade. Isso geralmente é feito usando uma técnica de validação cruzada para garantir que o desempenho é robusto e não apenas um acaso.
+          Em resumo, a Busca em Grade é uma abordagem sistemática para encontrar a melhor configuração de hiperparâmetros para um modelo de aprendizado de máquina, mas pode ser computacionalmente intensiva.
+
+         </p>
+
+         <h2>4. Avaliação e Métricas de Avaliação para IA Generativa</h2>
+         <p>A avaliação de modelos de IA generativa é essencial para garantir que eles produzem saídas de alta qualidade e que atendem aos objetivos desejados. Aqui está um resumo sobre as principais abordagens e métricas utilizadas na avaliação de IA generativa:
+            Em resumo, a avaliação de IA generativa combina métricas quantitativas e qualitativas para garantir que as saídas do modelo sejam de alta qualidade, diversificadas e úteis para os objetivos pretendidos. É crucial usar uma combinação de abordagens para obter uma visão abrangente do desempenho do modelo.
+         </p>
+          
+
+         <h2>5.BLEU e ROUGE</h2>
+         <p>BLEU (Bilingual Evaluation Understudy): Usada para avaliar a qualidade de texto gerado comparando-o com uma referência baseada em n-gramas. Comum em tarefas de geração de texto, como tradução automática e resumo.
+            ROUGE (Recall-Oriented Understudy for Gisting Evaluation): Avalia a qualidade de texto gerado comparando-o com textos de referência, focando na sobreposição de n-gramas, palavras e frases.
+         </p>
+
+    </div>
+    <a href="../index.html">voltar página inicial</a>
+</body>
+</html>
